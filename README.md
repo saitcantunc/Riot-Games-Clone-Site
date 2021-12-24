@@ -1,5 +1,6 @@
 # Riot-Games-Clone-Site
 This repo is clone of https://www.riotgames.com/tr 
+You can visit mine https://saitcantunc.github.io/Riot-Games-Clone-Site/
 
 I made this repo to improve myself in layout and position topics.
 
