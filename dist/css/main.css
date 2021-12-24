@@ -1,0 +1,1557 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+/* line 3, scss/main.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+select,
+textarea,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: "Roboto Condensed", sans-serif;
+  vertical-align: baseline; }
+
+/* line 90, scss/main.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+/* line 103, scss/main.scss */
+body {
+  line-height: 1;
+  overflow-x: hidden !important; }
+
+/* line 107, scss/main.scss */
+ol,
+ul {
+  list-style: none; }
+
+/* line 111, scss/main.scss */
+blockquote,
+q {
+  quotes: none; }
+
+/* line 115, scss/main.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+/* line 122, scss/main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 126, scss/main.scss */
+a {
+  text-decoration: none; }
+
+/* line 129, scss/main.scss */
+img {
+  border: 0; }
+
+/* line 132, scss/main.scss */
+:focus {
+  outline: 0; }
+
+/* line 135, scss/main.scss */
+.clear {
+  clear: both; }
+
+/* line 139, scss/main.scss */
+html,
+body {
+  height: 100%; }
+
+/* logo */
+/* line 145, scss/main.scss */
+.logo {
+  width: 75px;
+  height: 24px; }
+
+/* header */
+/* line 152, scss/main.scss */
+.header {
+  height: 80px;
+  width: 100%;
+  z-index: 999;
+  font-family: "FF Mark W05", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  transition: all .3s;
+  /* header lef side */ }
+  /* line 164, scss/main.scss */
+  .header-left-side {
+    height: 100%;
+    display: flex;
+    margin-left: 40px;
+    display: flex;
+    align-items: center; }
+    /* line 172, scss/main.scss */
+    .header-left-side .header-logo {
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+      /* line 177, scss/main.scss */
+      .header-left-side .header-logo img {
+        width: 75px;
+        height: 24px; }
+      /* line 182, scss/main.scss */
+      .header-left-side .header-logo i {
+        margin-left: 5px;
+        color: rgba(194, 28, 28, 0.63);
+        cursor: pointer; }
+    /* line 190, scss/main.scss */
+    .header-left-side .nav-menu {
+      margin-left: 30px; }
+      /* line 193, scss/main.scss */
+      .header-left-side .nav-menu ul {
+        display: flex;
+        align-items: center; }
+        /* line 197, scss/main.scss */
+        .header-left-side .nav-menu ul li {
+          margin-right: 40px;
+          position: relative; }
+          /* line 201, scss/main.scss */
+          .header-left-side .nav-menu ul li a {
+            color: #fff;
+            margin-right: 4px;
+            padding: 7.5px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.08rem; }
+          /* line 210, scss/main.scss */
+          .header-left-side .nav-menu ul li a:hover {
+            background: rgba(194, 190, 184, 0.6);
+            border-radius: 5px; }
+          /* line 215, scss/main.scss */
+          .header-left-side .nav-menu ul li i {
+            color: #fff;
+            cursor: pointer; }
+          /* line 221, scss/main.scss */
+          .header-left-side .nav-menu ul li .dropdown {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            min-height: 185px;
+            min-width: 200px;
+            white-space: nowrap;
+            position: absolute;
+            left: 0;
+            top: 69px;
+            background-color: #292929;
+            border-radius: 0 0 2px 2px;
+            transition: all 0.5s;
+            line-height: 120%;
+            text-transform: uppercase;
+            border-top: 3px solid #d1363a;
+            visibility: hidden;
+            opacity: 0; }
+            /* line 241, scss/main.scss */
+            .header-left-side .nav-menu ul li .dropdown a {
+              display: flex;
+              align-items: center;
+              padding: 8px 16px;
+              border: none;
+              height: 100%;
+              width: 100%;
+              margin: 0;
+              font-size: 13px;
+              font-weight: 500;
+              line-height: 16px;
+              text-transform: capitalize;
+              cursor: pointer; }
+          /* line 257, scss/main.scss */
+          .header-left-side .nav-menu ul li:hover .dropdown {
+            top: 35px;
+            visibility: visible;
+            opacity: 1; }
+  /* line 268, scss/main.scss */
+  .header-right-side {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 40px; }
+    /* line 275, scss/main.scss */
+    .header-right-side i {
+      color: #fff;
+      margin-right: 20px; }
+    /* line 281, scss/main.scss */
+    .header-right-side .search-bar {
+      height: 2rem;
+      display: flex;
+      align-items: center; }
+      /* line 286, scss/main.scss */
+      .header-right-side .search-bar label {
+        height: 1.5rem;
+        width: 10rem;
+        border-radius: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.3rem 1.4rem !important;
+        border: 1px solid #fff;
+        border-radius: 1.6rem;
+        position: relative; }
+        /* line 298, scss/main.scss */
+        .header-right-side .search-bar label input {
+          height: 2rem;
+          background-color: transparent;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: #fff;
+          font-size: 12px !important;
+          outline: 0;
+          margin-right: 10px; }
+          /* line 308, scss/main.scss */
+          .header-right-side .search-bar label input::placeholder {
+            color: #fff; }
+        /* line 313, scss/main.scss */
+        .header-right-side .search-bar label i {
+          position: absolute;
+          top: 9px;
+          right: 0; }
+    /* line 322, scss/main.scss */
+    .header-right-side .btn {
+      height: 32px;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      position: relative;
+      padding: 8px 16px; }
+      /* line 331, scss/main.scss */
+      .header-right-side .btn button {
+        width: 100%;
+        height: 100%;
+        border-radius: 1.6rem;
+        background: #d1363a;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0.6rem 1.4rem !important; }
+        /* line 341, scss/main.scss */
+        .header-right-side .btn button a {
+          color: #111;
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 1px; }
+
+/* line 352, scss/main.scss */
+.header.scroll {
+  background: #111; }
+
+/* line 357, scss/main.scss */
+.mega-menu {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -999999999999;
+  font-family: "Mark Pro", Arial, sans-serif;
+  display: block;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 400;
+  background: #fff;
+  visibility: unset;
+  opacity: 0;
+  transition: all 0.5s; }
+  /* line 374, scss/main.scss */
+  .mega-menu .title {
+    display: flex;
+    width: 1872px;
+    height: 56px;
+    justify-content: space-between;
+    padding: 24px 24px 0 24px;
+    text-align: center; }
+    /* line 383, scss/main.scss */
+    .mega-menu .title .left-side {
+      display: flex;
+      align-items: flex-start;
+      cursor: pointer; }
+      /* line 387, scss/main.scss */
+      .mega-menu .title .left-side img {
+        width: 75px;
+        height: 28px;
+        margin-right: 5px; }
+      /* line 393, scss/main.scss */
+      .mega-menu .title .left-side i {
+        top: 30px;
+        left: 110px;
+        position: absolute;
+        width: 8px;
+        height: 5px;
+        color: #7c0909; }
+    /* line 405, scss/main.scss */
+    .mega-menu .title .right-side .close-btn {
+      position: absolute;
+      right: 59px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      pointer-events: auto;
+      color: #111;
+      font-size: 1em;
+      background: rgba(186, 137, 100, 0.1);
+      text-align: center;
+      border-radius: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  /* line 425, scss/main.scss */
+  .mega-menu .content {
+    display: flex;
+    padding: 0 24px;
+    width: 100%;
+    height: 420px; }
+    /* line 432, scss/main.scss */
+    .mega-menu .content .list-content {
+      display: flex;
+      justify-content: space-around;
+      width: 918px;
+      height: 420px;
+      margin-right: 7px; }
+      /* line 439, scss/main.scss */
+      .mega-menu .content .list-content .list {
+        width: 299.33px; }
+        /* line 442, scss/main.scss */
+        .mega-menu .content .list-content .list ul {
+          padding-bottom: 16px;
+          display: block;
+          width: 100%;
+          font-size: 1em;
+          font-weight: 400; }
+          /* line 449, scss/main.scss */
+          .mega-menu .content .list-content .list ul li {
+            padding: 8px 12px 8px 16px;
+            cursor: pointer;
+            font-size: 13px;
+            line-height: 120%;
+            border-radius: 6.4px;
+            width: 90%;
+            height: 14px; }
+            /* line 458, scss/main.scss */
+            .mega-menu .content .list-content .list ul li:first-child {
+              margin-bottom: 10px;
+              background: rgba(186, 186, 186, 0.1);
+              font-weight: bold;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: #0a0a0a;
+              cursor: auto; }
+          /* line 469, scss/main.scss */
+          .mega-menu .content .list-content .list ul li:not(:first-child) {
+            margin-bottom: 10px; }
+          /* line 473, scss/main.scss */
+          .mega-menu .content .list-content .list ul li:not(:first-child):hover {
+            background: rgba(177, 173, 170, 0.2); }
+    /* line 481, scss/main.scss */
+    .mega-menu .content .img-content {
+      flex: 1;
+      width: 918px;
+      height: 420px; }
+      /* line 486, scss/main.scss */
+      .mega-menu .content .img-content .default-img {
+        display: flex;
+        gap: 10px;
+        visibility: visible;
+        opacity: 1; }
+        /* line 492, scss/main.scss */
+        .mega-menu .content .img-content .default-img li {
+          display: flex;
+          flex-direction: column;
+          cursor: pointer; }
+          /* line 497, scss/main.scss */
+          .mega-menu .content .img-content .default-img li img {
+            width: 451px;
+            max-width: 452px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75); }
+          /* line 505, scss/main.scss */
+          .mega-menu .content .img-content .default-img li img:hover {
+            box-shadow: 1px 1px 74px 1px rgba(0, 0, 0, 0.75); }
+          /* line 509, scss/main.scss */
+          .mega-menu .content .img-content .default-img li p {
+            margin-top: 16px;
+            color: #0a0a0a;
+            letter-spacing: 0.03em;
+            position: static;
+            display: inline-block;
+            left: 0px;
+            bottom: 8px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 15.6px; }
+
+/* line 528, scss/main.scss */
+.mega-menu.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 99999999999; }
+
+/* main */
+/* line 536, scss/main.scss */
+.main .first-section {
+  position: relative;
+  width: 1903px;
+  height: 600px;
+  max-width: 1440px; }
+  /* line 543, scss/main.scss */
+  .main .first-section .zaun {
+    top: 0; }
+  /* line 548, scss/main.scss */
+  .main .first-section .arcane-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 31%;
+    padding-left: 80px;
+    padding-right: 80px; }
+    /* line 557, scss/main.scss */
+    .main .first-section .arcane-content img {
+      margin-bottom: 50px;
+      width: 320px; }
+    /* line 562, scss/main.scss */
+    .main .first-section .arcane-content h1 {
+      color: #fff;
+      font-size: 1.938rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      display: block;
+      font-weight: bold; }
+    /* line 573, scss/main.scss */
+    .main .first-section .arcane-content .btn {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #ba8964 0, #d1ac90 100%);
+      color: #0a0a0a;
+      padding: 17px;
+      min-width: 180px;
+      border-radius: 24px;
+      transition: all .3s;
+      cursor: pointer; }
+      /* line 584, scss/main.scss */
+      .main .first-section .arcane-content .btn i {
+        display: flex;
+        align-items: center;
+        color: #111;
+        font-size: 32px;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px; }
+      /* line 594, scss/main.scss */
+      .main .first-section .arcane-content .btn h1 {
+        color: #111;
+        margin: auto;
+        font-size: 1.938rem;
+        margin-right: 0.75rem;
+        text-shadow: 1px 1px 7px #969696; }
+    /* line 603, scss/main.scss */
+    .main .first-section .arcane-content .btn:hover {
+      box-shadow: -1px 9px 9px -3px rgba(209, 172, 144, 0.78); }
+
+/* line 610, scss/main.scss */
+.main .second-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1903px;
+  height: 843.8px;
+  background: #462804;
+  background: linear-gradient(90deg, #462804 17%, #291702 29%, #130b01 49%, rgba(0, 0, 0, 0.975228) 70%); }
+  /* line 628, scss/main.scss */
+  .main .second-section .top-side {
+    width: 1730px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px; }
+    /* line 636, scss/main.scss */
+    .main .second-section .top-side h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: inherit;
+      margin: 0;
+      padding: 0;
+      display: block;
+      color: #f9f9f9;
+      font-family: "Mark Pro", Arial, sans-serif; }
+    /* line 648, scss/main.scss */
+    .main .second-section .top-side a {
+      width: 149.14px;
+      height: 29.02px;
+      box-sizing: border-box;
+      display: inline-block;
+      font-size: 0.813rem;
+      border-radius: 6.5px;
+      padding: 0.5rem 0.75rem;
+      min-width: auto;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      line-height: 1;
+      vertical-align: middle;
+      cursor: pointer;
+      overflow: visible;
+      text-align: center;
+      background: rgba(186, 137, 100, 0.2); }
+      /* line 667, scss/main.scss */
+      .main .second-section .top-side a span {
+        white-space: nowrap;
+        color: #fff; }
+  /* line 675, scss/main.scss */
+  .main .second-section .content {
+    width: 1730px;
+    height: 511.8px;
+    display: flex; }
+    /* line 680, scss/main.scss */
+    .main .second-section .content .big-content {
+      position: relative;
+      width: 1023.59px;
+      height: 511.8px;
+      border: 1px solid;
+      border-radius: 15px;
+      transition: all 0.5s;
+      margin-right: 15px; }
+      /* line 689, scss/main.scss */
+      .main .second-section .content .big-content .logo {
+        position: absolute;
+        top: 5%; }
+      /* line 694, scss/main.scss */
+      .main .second-section .content .big-content .bc {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px; }
+      /* line 700, scss/main.scss */
+      .main .second-section .content .big-content .contents {
+        position: absolute;
+        bottom: 3%;
+        margin-left: 30px; }
+        /* line 705, scss/main.scss */
+        .main .second-section .content .big-content .contents h3 {
+          width: 505.25px;
+          height: 37.22px;
+          font-size: 1.938rem;
+          line-height: 1.2;
+          margin-bottom: 4px;
+          color: #f9f9f9;
+          font-weight: 700;
+          font-family: "Mark Pro", Arial, sans-serif; }
+        /* line 716, scss/main.scss */
+        .main .second-section .content .big-content .contents h5 {
+          width: 505.25px;
+          height: 22.52px;
+          font-size: 0.938rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          color: rgba(101, 100, 98, 0.9); }
+    /* line 728, scss/main.scss */
+    .main .second-section .content .big-content:hover {
+      border: 1px solid #fff; }
+    /* line 732, scss/main.scss */
+    .main .second-section .content .other-contents {
+      width: 682.41px;
+      height: 511.8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      /* line 739, scss/main.scss */
+      .main .second-section .content .other-contents li {
+        position: relative;
+        width: 100%;
+        height: 120.44px;
+        min-height: 120px;
+        transition: 0.25s ease-out;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #f9f9f9;
+        font-size: 1em;
+        font-family: "Mark Pro", Arial, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+        border: 0;
+        border-radius: 12px;
+        background: #2c2c2c;
+        cursor: pointer; }
+        /* line 759, scss/main.scss */
+        .main .second-section .content .other-contents li .titles {
+          margin-right: 200px;
+          margin-left: 20px;
+          flex: 1 1 auto;
+          box-sizing: border-box;
+          display: block; }
+          /* line 766, scss/main.scss */
+          .main .second-section .content .other-contents li .titles h3 {
+            font-size: 1.125rem;
+            line-height: 1.2;
+            margin-bottom: 4px;
+            overflow: hidden;
+            font-weight: 700;
+            white-space: nowrap; }
+          /* line 775, scss/main.scss */
+          .main .second-section .content .other-contents li .titles h5 {
+            font-size: 0.938rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: rgba(101, 100, 98, 0.9); }
+        /* line 784, scss/main.scss */
+        .main .second-section .content .other-contents li .img {
+          box-sizing: border-box;
+          position: absolute;
+          display: block;
+          width: 200px;
+          height: 120px;
+          top: 0;
+          right: 0;
+          clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+          background-size: cover;
+          background-position: center;
+          border-radius: 0 8px 8px 0; }
+        /* line 798, scss/main.scss */
+        .main .second-section .content .other-contents li .logo {
+          position: absolute;
+          width: 32px;
+          height: 32px;
+          right: 8px;
+          top: 8px;
+          background-color: #141212;
+          border-radius: 50%; }
+      /* line 809, scss/main.scss */
+      .main .second-section .content .other-contents li:hover {
+        border: 1px solid #f9f9f9;
+        background: #404040; }
+
+/* line 818, scss/main.scss */
+.main .third-section {
+  box-sizing: border-box;
+  width: 1903px;
+  height: 1688.95px;
+  display: block;
+  padding: 100px 80px 100px 80px;
+  background: #2b2a29; }
+  /* line 827, scss/main.scss */
+  .main .third-section .title {
+    width: 1730px;
+    height: 72px;
+    text-align: left;
+    margin-bottom: 3.75rem;
+    color: #f9f9f9; }
+    /* line 834, scss/main.scss */
+    .main .third-section .title h2 {
+      font-size: 3rem;
+      font-family: "Mark Pro", Arial, sans-serif;
+      font-weight: 700;
+      line-height: inherit;
+      letter-spacing: 1px; }
+  /* line 843, scss/main.scss */
+  .main .third-section .big-items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 20px; }
+    /* line 849, scss/main.scss */
+    .main .third-section .big-items .left-item {
+      width: 855px;
+      height: 389px;
+      padding-left: 20px;
+      position: relative;
+      transition: all 0.2s ease-out;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 1px 5px 8px -3px rgba(0, 0, 0, 0.75);
+      cursor: pointer; }
+      /* line 860, scss/main.scss */
+      .main .third-section .big-items .left-item .game-card {
+        width: 100%;
+        height: 100%; }
+        /* line 864, scss/main.scss */
+        .main .third-section .big-items .left-item .game-card .img {
+          position: absolute;
+          border-radius: 8px;
+          max-width: 100%;
+          width: 100%;
+          height: 389px;
+          right: 0%;
+          top: 0%;
+          border: 0;
+          vertical-align: bottom;
+          aspect-ratio: auto 900 / 409.091; }
+        /* line 877, scss/main.scss */
+        .main .third-section .big-items .left-item .game-card-content {
+          height: 339px;
+          width: 324.89px;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: auto; }
+          /* line 887, scss/main.scss */
+          .main .third-section .big-items .left-item .game-card-content .syntax {
+            width: 180px;
+            height: 84.11px;
+            margin: 95.328px 17.438px;
+            padding-bottom: 8px; }
+            /* line 893, scss/main.scss */
+            .main .third-section .big-items .left-item .game-card-content .syntax img {
+              width: 100%;
+              height: 100%; }
+          /* line 899, scss/main.scss */
+          .main .third-section .big-items .left-item .game-card-content .desc {
+            width: 214.89px;
+            height: 66.22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between; }
+            /* line 907, scss/main.scss */
+            .main .third-section .big-items .left-item .game-card-content .desc p {
+              text-align: center;
+              font-size: clamp(0.5rem, 0.8vw, 0.813rem);
+              color: #c5c5c3;
+              font-weight: 700;
+              line-height: 1.2;
+              text-transform: uppercase;
+              margin-bottom: 8px; }
+            /* line 917, scss/main.scss */
+            .main .third-section .big-items .left-item .game-card-content .desc .platforms {
+              padding: 2px 4px;
+              width: 46px;
+              height: 23px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: space-around;
+              border-radius: 16px;
+              background-color: rgba(138, 136, 135, 0.2);
+              margin: 0 auto;
+              color: #f9f9f9; }
+    /* line 934, scss/main.scss */
+    .main .third-section .big-items .left-item:hover {
+      border: 1px solid rgba(255, 255, 255, 0.4); }
+    /* line 938, scss/main.scss */
+    .main .third-section .big-items .right-item {
+      width: 855px;
+      height: 389px;
+      padding-left: 20px;
+      position: relative;
+      transition: all 0.2s ease-out;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 1px 5px 8px -3px rgba(0, 0, 0, 0.75);
+      cursor: pointer; }
+      /* line 949, scss/main.scss */
+      .main .third-section .big-items .right-item .game-card {
+        width: 100%;
+        height: 100%; }
+        /* line 953, scss/main.scss */
+        .main .third-section .big-items .right-item .game-card .img {
+          position: absolute;
+          border-radius: 8px;
+          max-width: 100%;
+          width: 100%;
+          height: 389px;
+          right: 0%;
+          top: 0%;
+          border: 0;
+          vertical-align: bottom;
+          aspect-ratio: auto 900 / 409.091; }
+        /* line 966, scss/main.scss */
+        .main .third-section .big-items .right-item .game-card-content {
+          height: 339px;
+          width: 324.89px;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: auto; }
+          /* line 976, scss/main.scss */
+          .main .third-section .big-items .right-item .game-card-content .syntax {
+            width: 180px;
+            height: 130.39px;
+            margin: 72.188px 17.438px;
+            padding-bottom: 8px; }
+            /* line 982, scss/main.scss */
+            .main .third-section .big-items .right-item .game-card-content .syntax img {
+              width: 100%;
+              height: 100%; }
+          /* line 988, scss/main.scss */
+          .main .third-section .big-items .right-item .game-card-content .desc {
+            width: 214.89px;
+            height: 66.22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between; }
+            /* line 996, scss/main.scss */
+            .main .third-section .big-items .right-item .game-card-content .desc p {
+              text-align: center;
+              font-size: clamp(0.5rem, 0.8vw, 0.813rem);
+              color: #c5c5c3;
+              font-weight: 700;
+              line-height: 1.2;
+              text-transform: uppercase;
+              margin-bottom: 8px; }
+            /* line 1006, scss/main.scss */
+            .main .third-section .big-items .right-item .game-card-content .desc .platforms {
+              padding: 2px 4px;
+              width: 26px;
+              height: 23px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: space-around;
+              border-radius: 16px;
+              background-color: rgba(138, 136, 135, 0.2);
+              margin: 0 auto;
+              color: #f9f9f9; }
+    /* line 1023, scss/main.scss */
+    .main .third-section .big-items .right-item:hover {
+      border: 1px solid rgba(255, 255, 255, 0.4); }
+  /* line 1028, scss/main.scss */
+  .main .third-section .small-items {
+    width: 1743px;
+    height: 1100px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; }
+    /* line 1034, scss/main.scss */
+    .main .third-section .small-items .tft {
+      width: 563.33px;
+      height: 256px;
+      margin-bottom: 50px;
+      position: relative;
+      border-radius: 8px;
+      transition: all 0.2s ease-out;
+      cursor: pointer; }
+      /* line 1043, scss/main.scss */
+      .main .third-section .small-items .tft .game-card {
+        width: 100%;
+        height: 100%;
+        box-shadow: 1px 5px 8px -3px rgba(0, 0, 0, 0.75);
+        border-radius: 8px;
+        display: block; }
+        /* line 1050, scss/main.scss */
+        .main .third-section .small-items .tft .game-card img {
+          border-radius: 8px;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          border: 0; }
+        /* line 1058, scss/main.scss */
+        .main .third-section .small-items .tft .game-card-content {
+          width: 214.06px;
+          height: 100%;
+          padding: 12px 32px 24px 24px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          height: 100%; }
+          /* line 1072, scss/main.scss */
+          .main .third-section .small-items .tft .game-card-content .game-card-logo {
+            max-width: 180px;
+            margin: auto;
+            padding-bottom: 8px;
+            display: block; }
+            /* line 1078, scss/main.scss */
+            .main .third-section .small-items .tft .game-card-content .game-card-logo img {
+              width: 158.06px;
+              height: 103.86px; }
+          /* line 1084, scss/main.scss */
+          .main .third-section .small-items .tft .game-card-content .platforms {
+            font-size: 1em;
+            line-height: 1.5;
+            font-weight: 400;
+            padding: 2px 4px;
+            margin-bottom: 20px;
+            color: #f9f9f9; }
+    /* line 1096, scss/main.scss */
+    .main .third-section .small-items .tft:hover {
+      border: 2px solid rgba(255, 255, 255, 0.4); }
+    /* line 1100, scss/main.scss */
+    .main .third-section .small-items .lol {
+      width: 563.33px;
+      height: 256px;
+      padding-left: 20px;
+      margin-bottom: 50px;
+      position: relative;
+      cursor: pointer; }
+      /* line 1108, scss/main.scss */
+      .main .third-section .small-items .lol .game-card {
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s ease-out;
+        box-shadow: 1px 5px 8px -3px rgba(0, 0, 0, 0.75);
+        border-radius: 8px;
+        display: block; }
+        /* line 1116, scss/main.scss */
+        .main .third-section .small-items .lol .game-card img {
+          border-radius: 8px;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          border: 0; }
+        /* line 1124, scss/main.scss */
+        .main .third-section .small-items .lol .game-card-content {
+          width: 214.06px;
+          height: 100%;
+          padding: 12px 32px 24px 24px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          height: 100%; }
+          /* line 1138, scss/main.scss */
+          .main .third-section .small-items .lol .game-card-content .game-card-logo {
+            max-width: 180px;
+            margin: auto;
+            padding-bottom: 8px;
+            display: block; }
+            /* line 1144, scss/main.scss */
+            .main .third-section .small-items .lol .game-card-content .game-card-logo img {
+              width: 158.06px;
+              height: 103.86px; }
+          /* line 1150, scss/main.scss */
+          .main .third-section .small-items .lol .game-card-content .platforms {
+            font-size: 1em;
+            line-height: 1.5;
+            font-weight: 400;
+            padding: 2px 4px;
+            margin-bottom: 20px;
+            color: #f9f9f9; }
+    /* line 1162, scss/main.scss */
+    .main .third-section .small-items .lol:hover .game-card {
+      border: 2px solid rgba(255, 255, 255, 0.4); }
+    /* line 1166, scss/main.scss */
+    .main .third-section .small-items .run {
+      width: 563.33px;
+      height: 256px;
+      padding-left: 20px;
+      margin-bottom: 50px;
+      position: relative;
+      cursor: pointer; }
+      /* line 1174, scss/main.scss */
+      .main .third-section .small-items .run .game-card {
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s ease-out;
+        box-shadow: 1px 5px 8px -3px rgba(0, 0, 0, 0.75);
+        border-radius: 8px;
+        display: block; }
+        /* line 1182, scss/main.scss */
+        .main .third-section .small-items .run .game-card img {
+          border-radius: 8px;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          border: 0; }
+        /* line 1190, scss/main.scss */
+        .main .third-section .small-items .run .game-card-content {
+          width: 214.06px;
+          height: 100%;
+          padding: 12px 32px 24px 24px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          height: 100%; }
+          /* line 1204, scss/main.scss */
+          .main .third-section .small-items .run .game-card-content .game-card-logo {
+            max-width: 180px;
+            margin: auto;
+            padding-bottom: 8px;
+            display: block; }
+            /* line 1210, scss/main.scss */
+            .main .third-section .small-items .run .game-card-content .game-card-logo img {
+              width: 158.06px;
+              height: 103.86px; }
+          /* line 1216, scss/main.scss */
+          .main .third-section .small-items .run .game-card-content .platforms {
+            font-size: 1em;
+            line-height: 1.5;
+            font-weight: 400;
+            padding: 2px 4px;
+            margin-bottom: 20px;
+            color: #f9f9f9; }
+    /* line 1228, scss/main.scss */
+    .main .third-section .small-items .run:hover .game-card {
+      border: 2px solid rgba(255, 255, 255, 0.4); }
+    /* line 1232, scss/main.scss */
+    .main .third-section .small-items .king {
+      width: 563.33px;
+      height: 256px;
+      margin-bottom: 50px;
+      position: relative;
+      transition: all 0.2s ease-out;
+      border-radius: 8px;
+      cursor: pointer; }
+      /* line 1241, scss/main.scss */
+      .main .third-section .small-items .king .game-card {
+        width: 100%;
+        height: 100%;
+        box-shadow: 1px 5px 8px -3px rgba(0, 0, 0, 0.75);
+        border-radius: 8px;
+        display: block; }
+        /* line 1248, scss/main.scss */
+        .main .third-section .small-items .king .game-card img {
+          border-radius: 8px;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          border: 0; }
+        /* line 1256, scss/main.scss */
+        .main .third-section .small-items .king .game-card-content {
+          width: 214.06px;
+          height: 100%;
+          padding: 12px 32px 24px 24px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          height: 100%; }
+          /* line 1270, scss/main.scss */
+          .main .third-section .small-items .king .game-card-content .game-card-logo {
+            max-width: 180px;
+            margin: auto;
+            padding-bottom: 8px;
+            display: block; }
+            /* line 1276, scss/main.scss */
+            .main .third-section .small-items .king .game-card-content .game-card-logo img {
+              width: 158.06px;
+              height: 103.86px; }
+          /* line 1282, scss/main.scss */
+          .main .third-section .small-items .king .game-card-content .platforms {
+            font-size: 1em;
+            line-height: 1.5;
+            font-weight: 400;
+            padding: 2px 4px;
+            margin-bottom: 20px;
+            color: #f9f9f9; }
+    /* line 1294, scss/main.scss */
+    .main .third-section .small-items .king:hover {
+      border: 2px solid rgba(255, 255, 255, 0.4); }
+    /* line 1298, scss/main.scss */
+    .main .third-section .small-items .mayhem {
+      width: 563.33px;
+      height: 256px;
+      padding-left: 20px;
+      margin-bottom: 50px;
+      position: relative;
+      cursor: pointer; }
+      /* line 1306, scss/main.scss */
+      .main .third-section .small-items .mayhem .game-card {
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s ease-out;
+        box-shadow: 1px 5px 8px -3px rgba(0, 0, 0, 0.75);
+        border-radius: 8px;
+        display: block; }
+        /* line 1314, scss/main.scss */
+        .main .third-section .small-items .mayhem .game-card img {
+          border-radius: 8px;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          border: 0; }
+        /* line 1322, scss/main.scss */
+        .main .third-section .small-items .mayhem .game-card-content {
+          width: 214.06px;
+          height: 100%;
+          padding: 12px 32px 24px 24px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          height: 100%; }
+          /* line 1336, scss/main.scss */
+          .main .third-section .small-items .mayhem .game-card-content .game-card-logo {
+            max-width: 180px;
+            margin: auto;
+            padding-bottom: 8px;
+            display: block; }
+            /* line 1342, scss/main.scss */
+            .main .third-section .small-items .mayhem .game-card-content .game-card-logo img {
+              width: 158.06px;
+              height: 103.86px; }
+          /* line 1348, scss/main.scss */
+          .main .third-section .small-items .mayhem .game-card-content .platforms {
+            font-size: 1em;
+            line-height: 1.5;
+            font-weight: 400;
+            padding: 2px 4px;
+            margin-bottom: 20px;
+            color: #f9f9f9; }
+    /* line 1360, scss/main.scss */
+    .main .third-section .small-items .mayhem:hover .game-card {
+      border: 2px solid rgba(255, 255, 255, 0.4); }
+    /* line 1364, scss/main.scss */
+    .main .third-section .small-items .conv {
+      width: 563.33px;
+      height: 256px;
+      padding-left: 20px;
+      margin-bottom: 50px;
+      position: relative;
+      cursor: pointer; }
+      /* line 1372, scss/main.scss */
+      .main .third-section .small-items .conv .game-card {
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s ease-out;
+        box-shadow: 1px 5px 8px -3px rgba(0, 0, 0, 0.75);
+        border-radius: 8px;
+        display: block; }
+        /* line 1380, scss/main.scss */
+        .main .third-section .small-items .conv .game-card img {
+          border-radius: 8px;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          border: 0; }
+        /* line 1388, scss/main.scss */
+        .main .third-section .small-items .conv .game-card-content {
+          width: 214.06px;
+          height: 100%;
+          padding: 12px 32px 24px 24px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          height: 100%; }
+          /* line 1402, scss/main.scss */
+          .main .third-section .small-items .conv .game-card-content .game-card-logo {
+            max-width: 180px;
+            margin: auto;
+            padding-bottom: 8px;
+            display: block; }
+            /* line 1408, scss/main.scss */
+            .main .third-section .small-items .conv .game-card-content .game-card-logo img {
+              width: 158.06px;
+              height: 48.77px; }
+          /* line 1414, scss/main.scss */
+          .main .third-section .small-items .conv .game-card-content .platforms {
+            font-size: 1em;
+            line-height: 1.5;
+            font-weight: 400;
+            padding: 2px 4px;
+            margin-bottom: 20px;
+            color: #f9f9f9; }
+    /* line 1426, scss/main.scss */
+    .main .third-section .small-items .conv:hover .game-card {
+      border: 2px solid rgba(255, 255, 255, 0.4); }
+    /* line 1430, scss/main.scss */
+    .main .third-section .small-items .nunu {
+      grid-column: 2/2;
+      width: 563.33px;
+      padding-left: 20px;
+      height: 256px;
+      margin-bottom: 50px;
+      position: relative;
+      cursor: pointer; }
+      /* line 1439, scss/main.scss */
+      .main .third-section .small-items .nunu .game-card {
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s ease-out;
+        box-shadow: 1px 5px 8px -3px rgba(0, 0, 0, 0.75);
+        border-radius: 8px;
+        display: block; }
+        /* line 1447, scss/main.scss */
+        .main .third-section .small-items .nunu .game-card img {
+          border-radius: 8px;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          border: 0; }
+        /* line 1455, scss/main.scss */
+        .main .third-section .small-items .nunu .game-card-content {
+          width: 214.06px;
+          height: 100%;
+          padding: 12px 32px 24px 24px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          height: 100%; }
+          /* line 1469, scss/main.scss */
+          .main .third-section .small-items .nunu .game-card-content .game-card-logo {
+            max-width: 180px;
+            margin: auto;
+            padding-bottom: 8px;
+            display: block; }
+            /* line 1475, scss/main.scss */
+            .main .third-section .small-items .nunu .game-card-content .game-card-logo img {
+              width: 158.06px;
+              height: 48.77px; }
+          /* line 1481, scss/main.scss */
+          .main .third-section .small-items .nunu .game-card-content .platforms {
+            font-size: 1em;
+            line-height: 1.5;
+            font-weight: 400;
+            padding: 2px 4px;
+            margin-bottom: 20px;
+            color: #f9f9f9; }
+    /* line 1493, scss/main.scss */
+    .main .third-section .small-items .nunu:hover .game-card {
+      border: 2px solid rgba(255, 255, 255, 0.4); }
+
+/* line 1500, scss/main.scss */
+.main .fourth-section {
+  width: 1903px;
+  height: 569.3px;
+  box-sizing: border-box;
+  display: block;
+  color: #2b2a29; }
+  /* line 1507, scss/main.scss */
+  .main .fourth-section .careers {
+    display: flex;
+    background-color: #ebebeb;
+    box-sizing: border-box; }
+    /* line 1512, scss/main.scss */
+    .main .fourth-section .careers-content {
+      display: flex;
+      flex: 1 1 50%;
+      align-items: center;
+      box-sizing: border-box;
+      height: 100%; }
+      /* line 1519, scss/main.scss */
+      .main .fourth-section .careers-content-inner {
+        margin: 0 0 0 auto;
+        padding: 80px 30px;
+        max-width: 620px;
+        text-align: center;
+        flex-grow: 1; }
+        /* line 1526, scss/main.scss */
+        .main .fourth-section .careers-content-inner h2 {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 1;
+          color: #0a0a0a;
+          margin-bottom: 1.5rem; }
+        /* line 1534, scss/main.scss */
+        .main .fourth-section .careers-content-inner p {
+          font-size: 1.25rem;
+          color: #656462;
+          line-height: 1.2;
+          letter-spacing: -0.03em;
+          margin: 0 auto 2.5rem;
+          font-weight: 600;
+          max-width: 450px; }
+        /* line 1544, scss/main.scss */
+        .main .fourth-section .careers-content-inner .careers-jobs {
+          display: flex;
+          margin-bottom: 40px;
+          text-align: center;
+          color: #2b2a29;
+          line-height: 1.5;
+          font-weight: 400; }
+          /* line 1552, scss/main.scss */
+          .main .fourth-section .careers-content-inner .careers-jobs a:first-child {
+            margin-right: 24px; }
+          /* line 1556, scss/main.scss */
+          .main .fourth-section .careers-content-inner .careers-jobs a {
+            font-size: 1.563rem;
+            padding: 20px;
+            display: block;
+            position: relative;
+            flex: 1 1 260px;
+            text-align: center;
+            background-color: rgba(173, 172, 170, 0.2);
+            border-radius: 8px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #656462;
+            cursor: pointer; }
+            /* line 1570, scss/main.scss */
+            .main .fourth-section .careers-content-inner .careers-jobs a span {
+              display: block;
+              color: #0a0a0a;
+              font-size: 3.75rem;
+              font-weight: 700;
+              text-align: center; }
+          /* line 1579, scss/main.scss */
+          .main .fourth-section .careers-content-inner .careers-jobs a:hover {
+            background-color: rgba(173, 172, 170, 0.6); }
+        /* line 1584, scss/main.scss */
+        .main .fourth-section .careers-content-inner a {
+          display: inline-block;
+          margin-bottom: 0;
+          min-width: 260px;
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 700;
+          padding: 22px 16px;
+          color: #f9f9f9;
+          background-color: #d1363a;
+          position: relative;
+          border: 0;
+          vertical-align: middle;
+          border-radius: 24px;
+          letter-spacing: .025em;
+          transition: all .3s; }
+        /* line 1602, scss/main.scss */
+        .main .fourth-section .careers-content-inner a:hover {
+          background-color: rgba(194, 28, 28, 0.63); }
+    /* line 1608, scss/main.scss */
+    .main .fourth-section .careers-img {
+      clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+      flex: 1 1 55%; }
+
+/* line 1617, scss/main.scss */
+.footer {
+  position: relative;
+  display: block; }
+  /* line 1621, scss/main.scss */
+  .footer-inner {
+    padding-top: 0;
+    position: relative;
+    z-index: 1;
+    background-color: #252423;
+    padding: 60px 20px 40px;
+    color: #8a8887;
+    font-size: .688rem;
+    text-align: center; }
+    /* line 1631, scss/main.scss */
+    .footer-inner .content-center {
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      max-width: 1440px; }
+      /* line 1637, scss/main.scss */
+      .footer-inner .content-center .footer-row-up {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 0 auto; }
+        /* line 1648, scss/main.scss */
+        .footer-inner .content-center .footer-row-up .footer-col-inner {
+          display: flex;
+          align-items: center; }
+          /* line 1652, scss/main.scss */
+          .footer-inner .content-center .footer-row-up .footer-col-inner a {
+            color: #8a8887;
+            transition: all .3s ease-out;
+            padding-right: 20px;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 35px; }
+          /* line 1661, scss/main.scss */
+          .footer-inner .content-center .footer-row-up .footer-col-inner a:hover {
+            color: rgba(194, 28, 28, 0.63); }
+          /* line 1667, scss/main.scss */
+          .footer-inner .content-center .footer-row-up .footer-col-inner .footer-nav nav {
+            display: block; }
+            /* line 1670, scss/main.scss */
+            .footer-inner .content-center .footer-row-up .footer-col-inner .footer-nav nav ul {
+              margin-bottom: 0;
+              display: flex;
+              text-align: left; }
+              /* line 1676, scss/main.scss */
+              .footer-inner .content-center .footer-row-up .footer-col-inner .footer-nav nav ul li {
+                padding-left: 8px;
+                padding-right: 8px; }
+                /* line 1680, scss/main.scss */
+                .footer-inner .content-center .footer-row-up .footer-col-inner .footer-nav nav ul li a {
+                  padding: 10px;
+                  font-size: 11px;
+                  font-weight: 800;
+                  letter-spacing: .08em;
+                  transition: all .3s ease-out;
+                  text-decoration: none; }
+                /* line 1689, scss/main.scss */
+                .footer-inner .content-center .footer-row-up .footer-col-inner .footer-nav nav ul li a:hover {
+                  color: #fff;
+                  text-decoration: underline; }
+        /* line 1699, scss/main.scss */
+        .footer-inner .content-center .footer-row-up .footer-col .footer-social {
+          padding-top: 0;
+          padding-bottom: 0;
+          white-space: nowrap;
+          font-size: 15px;
+          cursor: pointer; }
+          /* line 1706, scss/main.scss */
+          .footer-inner .content-center .footer-row-up .footer-col .footer-social i {
+            margin-right: 20px; }
+          /* line 1710, scss/main.scss */
+          .footer-inner .content-center .footer-row-up .footer-col .footer-social i:hover {
+            color: rgba(194, 28, 28, 0.63); }
+      /* line 1717, scss/main.scss */
+      .footer-inner .content-center .separator {
+        height: 2px;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        background: #404040;
+        background-repeat: repeat-x;
+        background-position: 50% 50%;
+        background-size: 420px 2px; }
+      /* line 1728, scss/main.scss */
+      .footer-inner .content-center .footer-row-down {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        max-width: 1440px; }
+        /* line 1738, scss/main.scss */
+        .footer-inner .content-center .footer-row-down .footer-col ul {
+          display: flex;
+          font-size: 15px; }
+          /* line 1742, scss/main.scss */
+          .footer-inner .content-center .footer-row-down .footer-col ul li {
+            margin-right: 10px; }
+            /* line 1745, scss/main.scss */
+            .footer-inner .content-center .footer-row-down .footer-col ul li i {
+              font-size: 10px; }
+            /* line 1749, scss/main.scss */
+            .footer-inner .content-center .footer-row-down .footer-col ul li button {
+              color: #8a8887;
+              background: transparent; }
+            /* line 1754, scss/main.scss */
+            .footer-inner .content-center .footer-row-down .footer-col ul li button:hover {
+              color: #fff;
+              text-decoration: underline;
+              cursor: pointer; }
+        /* line 1764, scss/main.scss */
+        .footer-inner .content-center .footer-row-down .footer-col .footer-top-link a {
+          font-size: .875rem;
+          color: #8a8887;
+          transition: all .3s; }
+          /* line 1769, scss/main.scss */
+          .footer-inner .content-center .footer-row-down .footer-col .footer-top-link a i {
+            margin-left: 3px; }
+        /* line 1774, scss/main.scss */
+        .footer-inner .content-center .footer-row-down .footer-col .footer-top-link a:hover {
+          color: #fff; }
+        /* line 1778, scss/main.scss */
+        .footer-inner .content-center .footer-row-down .footer-col .footer-top-link a:hover i {
+          color: rgba(194, 28, 28, 0.63); }
